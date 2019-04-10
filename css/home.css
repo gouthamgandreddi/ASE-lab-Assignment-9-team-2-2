@@ -1,0 +1,19 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: maroon;
+}
+
+p{
+    color: maroon;
+    text-shadow:2px 2px 8px black;
+    font-size: 1.5rem;
+}
+img{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}

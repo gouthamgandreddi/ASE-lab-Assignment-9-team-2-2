@@ -1,0 +1,15 @@
+document
+html
+    head
+        title Home Page
+        link(rel="stylesheet" type="text/css" href="home.css")
+    body
+        div
+            img(src='/umkc_kangaroos-wordmark.png' alt="one piece" width=80 height=80)
+            h1 Welcome User
+        div
+            form(action='/userinfo' method="get")
+                p username - #{username}
+                p password - #{password}
+                button(type="submit") getuser info
+

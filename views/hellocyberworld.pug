@@ -1,0 +1,14 @@
+doctype
+html
+    head
+        title pug program
+        link(rel="stylesheet" type="text/css" href="login.css")
+    body
+        h1 PUG Demo
+        form(action='/' method="post")
+            input(type='text' name='username' placeholder='user name')
+            input(type='password' name='password' placeholder='password')
+            button(type='submit') submit
+            p #{error}
+
+
