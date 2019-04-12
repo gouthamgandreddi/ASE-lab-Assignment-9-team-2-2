@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+const port = process.env.PORT || 5000;
 const app = express();
 
 app.set('view engine','pug');
@@ -41,6 +42,6 @@ app.get('/userinfo',(req,res,next)=>{
     res.render('home',{username: req.cookies.username, password:req.cookies.password});
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server started');
 });
